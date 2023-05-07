@@ -22,7 +22,7 @@ const Home = () => {
   }
 
   const Create = () => {
-    axios.post("https://client-7i0k.onrender.com", create)
+    axios.post("https://server-fyy9.onrender.com", create)
     .then(res => {
       // console.log(res.data.message);
       window.alert(res.data.message);
@@ -39,7 +39,7 @@ const Home = () => {
   }
 
   const Read = () => {
-    axios.get("https://client-7i0k.onrender.com")
+    axios.get("https://server-fyy9.onrender.com")
     .then(res => {
       // console.log(res.data.data);
       setUsers(res.data.data);
@@ -65,7 +65,7 @@ const Home = () => {
   }
 
   const Delete = (id) => {
-    axios.delete(`https://client-7i0k.onrender.com/${id}`)
+    axios.delete(`https://server-fyy9.onrender.com/${id}`)
     .then(res => {
       // console.log("Delete", res.data.message);
       window.alert(res.data.message);
