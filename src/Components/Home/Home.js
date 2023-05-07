@@ -22,7 +22,7 @@ const Home = () => {
   }
 
   const Create = () => {
-    axios.post("http://127.0.0.1:4000", create)
+    axios.post("https://client-7i0k.onrender.com", create)
     .then(res => {
       // console.log(res.data.message);
       window.alert(res.data.message);
@@ -39,7 +39,7 @@ const Home = () => {
   }
 
   const Read = () => {
-    axios.get("http://127.0.0.1:4000")
+    axios.get("https://client-7i0k.onrender.com")
     .then(res => {
       // console.log(res.data.data);
       setUsers(res.data.data);
@@ -50,7 +50,7 @@ const Home = () => {
   }
 
   const Update = (id) => {
-    axios.put(`http://127.0.0.1:4000/${id}`)
+    axios.put(`https://client-7i0k.onrender.com/${id}`)
     .then(res => {
       // console.log("Update", res.data.data.name);
       setCreate({
@@ -65,7 +65,7 @@ const Home = () => {
   }
 
   const Delete = (id) => {
-    axios.delete(`http://127.0.0.1:4000/${id}`)
+    axios.delete(`https://client-7i0k.onrender.com/${id}`)
     .then(res => {
       // console.log("Delete", res.data.message);
       window.alert(res.data.message);
